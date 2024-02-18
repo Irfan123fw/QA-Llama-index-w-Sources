@@ -32,7 +32,7 @@ async def factory():
             model_name="gpt-3.5-turbo",
             streaming=True))
     
-    contents=f"Proses selesai. Sekarang, Anda dapat mengajukan pertanyaan seputar Hadis "
+    contents=f"Processing done "
     await cl.Message(content=contents).send()
     service_context = ServiceContext.from_defaults(
         llm=llm, 
